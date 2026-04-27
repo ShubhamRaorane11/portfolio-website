@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>SHUBHAM // FULL STACK DEVELOPER</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;700;900&family=Poppins:wght@300;400;500;600&family=Share+Tech+Mono&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+<div class="cursor-glow" id="cursorGlow"></div>
+
+<nav class="hud-nav" id="hudNav">
+  <div class="nav-logo">
+    <span class="logo-bracket">[</span>
+    <span class="logo-text">SHB</span>
+    <span class="logo-bracket">]</span>
+  </div>
+  <ul class="nav-links">
+    <li><a href="#about" data-label="01">Origin</a></li>
+    <li><a href="#skills" data-label="02">Powers</a></li>
+    <li><a href="#projects" data-label="03">Missions</a></li>
+    <li><a href="#arsenal" data-label="04">Arsenal</a></li>
+    <li><a href="#contact" data-label="05">Summon</a></li>
+  </ul>
+  <div class="nav-status">
+    <span class="status-dot"></span>
+    <span class="status-text">ONLINE</span>
+  </div>
+  <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<section class="hero" id="home">
+  <canvas id="particleCanvas"></canvas>
+
+  <div class="hud-corner hud-tl"></div>
+  <div class="hud-corner hud-tr"></div>
+  <div class="hud-corner hud-bl"></div>
+  <div class="hud-corner hud-br"></div>
+
+  <div class="scanlines"></div>
+
+  <div class="hero-content">
+    <div class="hero-badge">
+      <span class="badge-icon">⬡</span>
+      <span>FULL STACK DEVELOPER</span>
+      <span class="badge-icon">⬡</span>
+    </div>
+
+    <h1 class="hero-title">
+      <span class="title-greeting">Hi, I'm</span>
+      <span class="title-name" id="heroName">SHUBHAM</span>
+      <span class="title-dash">—</span>
+    </h1>
+
+    <div class="hero-subtitle">
+      <span class="subtitle-static">I Build </span>
+      <span class="typed-wrapper">
+        <span class="typed-text" id="typedText"></span>
+        <span class="typed-cursor">|</span>
+      </span>
+    </div>
+
+    <p class="hero-tagline">
+      Turning complex problems into elegant digital solutions.<br/>
+      Code is my superpower. The web is my universe.
+    </p>
+
+    <div class="hero-stats">
+      <div class="stat-item">
+        <span class="stat-number" data-count="5">0</span>
+        <span class="stat-label">Technologies</span>
+      </div>
+      <div class="stat-divider">|</div>
+      <div class="stat-item">
+        <span class="stat-number" data-count="3">0</span>
+        <span class="stat-label">Projects</span>
+      </div>
+      <div class="stat-divider">|</div>
+      <div class="stat-item">
+        <span class="stat-number" data-count="100">0</span>
+        <span class="stat-label">% Committed</span>
+      </div>
+    </div>
+
+    <div class="hero-cta">
+      <a href="#projects" class="btn-primary">
+        <span class="btn-glow"></span>
+        <span class="btn-content">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+          View Missions
+        </span>
+      </a>
+      <a href="#contact" class="btn-secondary">
+        <span class="btn-content">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 11.5 19.79 19.79 0 01.22 2.84 2 2 0 012.22.86h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 8.37A16 16 0 0015.63 17.9l1.57-1.57a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+          Contact Me
+        </span>
+      </a>
+    </div>
+  </div>
+
+  <div class="hud-floating hud-left">
+    <div class="hud-line"></div>
+    <span class="hud-label">SYS.ACTIVE</span>
+  </div>
+  <div class="hud-floating hud-right">
+    <div class="hud-line"></div>
+    <span class="hud-label">v2.0.26</span>
+  </div>
+
+  <div class="scroll-indicator">
+    <span class="scroll-text">SCROLL</span>
+    <div class="scroll-line"></div>
+  </div>
+</section>
+
+<section class="about" id="about">
+  <div class="section-header" data-aos="fade-up">
+    <span class="section-number">01</span>
+    <h2 class="section-title">Origin Story</h2>
+    <div class="section-line"></div>
+  </div>
+
+  <div class="about-grid">
+    <div class="timeline" data-aos="fade-right">
+      <div class="timeline-item" data-aos="fade-up" data-aos-delay="100">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <span class="timeline-year">GENESIS</span>
+          <h3>The Spark</h3>
+          <p>Discovered the power of code. Realized that with the right skills, anything could be built — websites, apps, entire digital worlds.</p>
+        </div>
+      </div>
+      <div class="timeline-item" data-aos="fade-up" data-aos-delay="200">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <span class="timeline-year">TRAINING</span>
+          <h3>Mastering the Stack</h3>
+          <p>Dove deep into HTML, CSS, JavaScript. Expanded to Python & Flask. Learned to tame databases with MySQL.</p>
+        </div>
+      </div>
+      <div class="timeline-item" data-aos="fade-up" data-aos-delay="300">
+        <div class="timeline-dot active"></div>
+        <div class="timeline-content">
+          <span class="timeline-year">NOW</span>
+          <h3>Building & Shipping</h3>
+          <p>Building real-world full stack applications. Every project is a mission. Every bug is a villain to defeat.</p>
+        </div>
+      </div>
+      <div class="timeline-item" data-aos="fade-up" data-aos-delay="400">
+        <div class="timeline-dot future"></div>
+        <div class="timeline-content">
+          <span class="timeline-year">HORIZON</span>
+          <h3>The Next Level</h3>
+          <p>Expanding into cloud infrastructure, advanced APIs, and building products that scale to millions.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="about-card" data-aos="fade-left">
+      <div class="card-hud-header">
+        <span>DEVELOPER.PROFILE</span>
+        <span class="card-status">● ACTIVE</span>
+      </div>
+      <div class="about-avatar">
+        <div class="avatar-ring outer"></div>
+        <div class="avatar-ring middle"></div>
+        <div class="avatar-ring inner"></div>
+        <div class="avatar-core">
+          <span class="avatar-initials">SHB</span>
+        </div>
+        <div class="avatar-scan"></div>
+      </div>
+      <div class="about-info">
+        <div class="info-row">
+          <span class="info-label">NAME</span>
+          <span class="info-value">Shubham</span>
+        </div>
+        <div class="info-row">
+          <span class="info-label">ROLE</span>
+          <span class="info-value">Full Stack Developer</span>
+        </div>
+        <div class="info-row">
+          <span class="info-label">STATUS</span>
+          <span class="info-value"><span class="status-dot"></span> Available for hire</span>
+        </div>
+        <div class="info-row">
+          <span class="info-label">MISSION</span>
+          <span class="info-value">Build. Ship. Repeat.</span>
+        </div>
+      </div>
+      <p class="about-bio">
+        I'm a full stack developer who loves turning ideas into reality. I specialize in building end-to-end web applications with clean code, thoughtful architecture, and pixel-perfect UIs. When I'm not coding, I'm studying systems and learning what makes great software tick.
+      </p>
+    </div>
+  </div>
+</section>
+\
+<section class="skills" id="skills">
+  <div class="section-header" data-aos="fade-up">
+    <span class="section-number">02</span>
+    <h2 class="section-title">Superpowers</h2>
+    <div class="section-line"></div>
+  </div>
+
+  <div class="skills-grid">
+\
+    <div class="skill-category" data-aos="fade-up" data-aos-delay="100">
+      <div class="category-header">
+        <div class="category-icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+        </div>
+        <h3>Frontend</h3>
+      </div>
+      <div class="skill-bars">
+        <div class="skill-bar-item" data-aos="fade-right" data-aos-delay="150">
+          <div class="skill-info">
+            <span class="skill-name">HTML5</span>
+            <span class="skill-pct">92%</span>
+          </div>
+          <div class="skill-track">
+            <div class="skill-fill" data-width="92" style="--clr: #e34c26"></div>
+          </div>
+        </div>
+        <div class="skill-bar-item" data-aos="fade-right" data-aos-delay="200">
+          <div class="skill-info">
+            <span class="skill-name">CSS3</span>
+            <span class="skill-pct">88%</span>
+          </div>
+          <div class="skill-track">
+            <div class="skill-fill" data-width="88" style="--clr: #264de4"></div>
+          </div>
+        </div>
+        <div class="skill-bar-item" data-aos="fade-right" data-aos-delay="250">
+          <div class="skill-info">
+            <span class="skill-name">JavaScript</span>
+            <span class="skill-pct">82%</span>
+          </div>
+          <div class="skill-track">
+            <div class="skill-fill" data-width="82" style="--clr: #f0db4f"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="skill-category" data-aos="fade-up" data-aos-delay="200">
+      <div class="category-header">
+        <div class="category-icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+        </div>
+        <h3>Backend</h3>
+      </div>
+      <div class="skill-bars">
+        <div class="skill-bar-item" data-aos="fade-right" data-aos-delay="250">
+          <div class="skill-info">
+            <span class="skill-name">Python</span>
+            <span class="skill-pct">85%</span>
+          </div>
+          <div class="skill-track">
+            <div class="skill-fill" data-width="85" style="--clr: #3776ab"></div>
+          </div>
+        </div>
+        <div class="skill-bar-item" data-aos="fade-right" data-aos-delay="300">
+          <div class="skill-info">
+            <span class="skill-name">Flask</span>
+            <span class="skill-pct">78%</span>
+          </div>
+          <div class="skill-track">
+            <div class="skill-fill" data-width="78" style="--clr: #00d4aa"></div>
+          </div>
+        </div>
+        <div class="skill-bar-item" data-aos="fade-right" data-aos-delay="350">
+          <div class="skill-info">
+            <span class="skill-name">REST APIs</span>
+            <span class="skill-pct">75%</span>
+          </div>
+          <div class="skill-track">
+            <div class="skill-fill" data-width="75" style="--clr: #7c3aed"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Database -->
+    <div class="skill-category" data-aos="fade-up" data-aos-delay="300">
+      <div class="category-header">
+        <div class="category-icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M3 5V19A9 3 0 0021 19V5"/><path d="M3 12A9 3 0 0021 12"/></svg>
+        </div>
+        <h3>Database</h3>
+      </div>
+      <div class="skill-bars">
+        <div class="skill-bar-item" data-aos="fade-right" data-aos-delay="350">
+          <div class="skill-info">
+            <span class="skill-name">MySQL</span>
+            <span class="skill-pct">80%</span>
+          </div>
+          <div class="skill-track">
+            <div class="skill-fill" data-width="80" style="--clr: #00758f"></div>
+          </div>
+        </div>
+        <div class="skill-bar-item" data-aos="fade-right" data-aos-delay="400">
+          <div class="skill-info">
+            <span class="skill-name">SQL Queries</span>
+            <span class="skill-pct">83%</span>
+          </div>
+          <div class="skill-track">
+            <div class="skill-fill" data-width="83" style="--clr: #f59e0b"></div>
+          </div>
+        </div>
+        <div class="skill-bar-item" data-aos="fade-right" data-aos-delay="450">
+          <div class="skill-info">
+            <span class="skill-name">DB Design</span>
+            <span class="skill-pct">74%</span>
+          </div>
+          <div class="skill-track">
+            <div class="skill-fill" data-width="74" style="--clr: #ef4444"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section class="projects" id="projects">
+  <div class="section-header" data-aos="fade-up">
+    <span class="section-number">03</span>
+    <h2 class="section-title">Missions</h2>
+    <div class="section-line"></div>
+  </div>
+
+  <div class="projects-grid">
+
+    <!-- Project 1 -->
+    <div class="project-card" data-aos="fade-up" data-aos-delay="100">
+      <div class="card-bg" style="--accent: #00d4aa"></div>
+      <div class="card-glow" style="--glow: #00d4aa"></div>
+      <div class="card-header">
+        <span class="mission-tag">MISSION #001</span>
+        <div class="card-status-badge">DEPLOYED</div>
+      </div>
+      <div class="card-icon-wrap">
+        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#00d4aa" stroke-width="1.5"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+      </div>
+      <h3 class="card-title">Expense Tracker</h3>
+      <p class="card-desc">A full-stack personal finance app to track income and expenses with visualized analytics, category management, and monthly summaries.</p>
+      <div class="card-tech">
+        <span class="tech-tag">HTML</span>
+        <span class="tech-tag">CSS</span>
+        <span class="tech-tag">JavaScript</span>
+        <span class="tech-tag">Python Flask</span>
+        <span class="tech-tag">MySQL</span>
+      </div>
+      <div class="card-links">
+        <a href="#" class="card-link demo">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          Live Demo
+        </a>
+        <a href="#" class="card-link github">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
+          GitHub
+        </a>
+      </div>
+    </div>
+
+    <!-- Project 2 -->
+    <div class="project-card" data-aos="fade-up" data-aos-delay="200">
+      <div class="card-bg" style="--accent: #7c3aed"></div>
+      <div class="card-glow" style="--glow: #7c3aed"></div>
+      <div class="card-header">
+        <span class="mission-tag">MISSION #002</span>
+        <div class="card-status-badge">DEPLOYED</div>
+      </div>
+      <div class="card-icon-wrap">
+        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#7c3aed" stroke-width="1.5"><path d="M2 3h6a4 4 0 014 4v14a3 3 0 00-3-3H2z"/><path d="M22 3h-6a4 4 0 00-4 4v14a3 3 0 013-3h7z"/></svg>
+      </div>
+      <h3 class="card-title">Career Guidance Portal</h3>
+      <p class="card-desc">A dynamic web platform that helps students discover career paths, explore resources, and get personalized guidance based on their interests.</p>
+      <div class="card-tech">
+        <span class="tech-tag">HTML</span>
+        <span class="tech-tag">CSS</span>
+        <span class="tech-tag">JavaScript</span>
+        <span class="tech-tag">Python Flask</span>
+        <span class="tech-tag">MySQL</span>
+      </div>
+      <div class="card-links">
+        <a href="#" class="card-link demo">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          Live Demo
+        </a>
+        <a href="#" class="card-link github">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
+          GitHub
+        </a>
+      </div>
+    </div>
+
+    <!-- Project 3 -->
+    <div class="project-card featured" data-aos="fade-up" data-aos-delay="300">
+      <div class="card-bg" style="--accent: #f59e0b"></div>
+      <div class="card-glow" style="--glow: #f59e0b"></div>
+      <div class="card-header">
+        <span class="mission-tag">MISSION #003</span>
+        <div class="card-status-badge active">IN PROGRESS</div>
+      </div>
+      <div class="card-icon-wrap">
+        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#f59e0b" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18"/><path d="M9 21V9"/></svg>
+      </div>
+      <h3 class="card-title">Web Applications</h3>
+      <p class="card-desc">A collection of purposeful web apps solving real problems — from productivity tools to interactive dashboards. Built with performance and UX in mind.</p>
+      <div class="card-tech">
+        <span class="tech-tag">HTML</span>
+        <span class="tech-tag">CSS</span>
+        <span class="tech-tag">JavaScript</span>
+        <span class="tech-tag">Flask</span>
+      </div>
+      <div class="card-links">
+        <a href="#" class="card-link demo">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          Live Demo
+        </a>
+        <a href="#" class="card-link github">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
+          GitHub
+        </a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section class="arsenal" id="arsenal">
+  <div class="section-header" data-aos="fade-up">
+    <span class="section-number">04</span>
+    <h2 class="section-title">Arsenal</h2>
+    <div class="section-line"></div>
+  </div>
+
+  <div class="arsenal-grid">
+    <div class="arsenal-item" data-aos="zoom-in" data-aos-delay="50" style="--item-clr:#e34c26">
+      <div class="arsenal-icon">
+        <svg viewBox="0 0 24 24" width="36" height="36"><path fill="#e34c26" d="M1.5 0h21l-1.91 21.563L11.977 24l-8.564-2.438L1.5 0zm7.031 9.75l-.232-2.718 10.059.003.23-2.622L5.412 4.41l.698 8.01h9.126l-.326 3.426-2.91.804-2.955-.81-.188-2.11H6.248l.33 4.171L12 19.351l5.379-1.443.744-8.157H8.531z"/></svg>
+      </div>
+      <span class="arsenal-name">HTML5</span>
+    </div>
+    <div class="arsenal-item" data-aos="zoom-in" data-aos-delay="100" style="--item-clr:#264de4">
+      <div class="arsenal-icon">
+        <svg viewBox="0 0 24 24" width="36" height="36"><path fill="#264de4" d="M1.5 0h21l-1.91 21.563L11.977 24l-8.565-2.438L1.5 0zm17.09 4.413L5.41 4.41l.213 2.622 10.125.002-.255 2.716h-6.64l.24 2.573h6.182l-.366 3.523-2.91.804-2.956-.81-.188-2.11h-2.61l.29 3.855L12 19.288l5.373-1.53L18.59 4.414z"/></svg>
+      </div>
+      <span class="arsenal-name">CSS3</span>
+    </div>
+    <div class="arsenal-item" data-aos="zoom-in" data-aos-delay="150" style="--item-clr:#f0db4f">
+      <div class="arsenal-icon">
+        <svg viewBox="0 0 24 24" width="36" height="36"><path fill="#f0db4f" d="M0 0h24v24H0V0zm22.034 18.276c-.175-1.095-.888-2.015-3.003-2.873-.736-.345-1.554-.585-1.797-1.14-.091-.33-.105-.51-.046-.705.15-.646.915-.84 1.515-.66.39.12.75.42.976.9 1.034-.676 1.034-.676 1.755-1.125-.27-.42-.404-.601-.586-.78-.63-.705-1.469-1.065-2.834-1.034l-.705.089c-.676.165-1.32.525-1.71 1.005-1.14 1.291-.811 3.541.569 4.471 1.365 1.02 3.361 1.244 3.616 2.205.24 1.17-.87 1.545-1.966 1.41-.811-.18-1.26-.586-1.755-1.336l-1.83 1.051c.21.48.45.689.81 1.109 1.74 1.756 6.09 1.666 6.871-1.004.029-.09.24-.705.074-1.65l.046.067zm-8.983-7.245h-2.248c0 1.938-.009 3.864-.009 5.805 0 1.232.063 2.363-.138 2.704-.33.689-1.18.601-1.566.48-.396-.196-.597-.466-.83-.855-.063-.105-.11-.196-.127-.196l-1.825 1.125c.305.63.75 1.172 1.324 1.517.855.51 2.004.675 3.207.405.783-.226 1.458-.691 1.811-1.411.51-.93.402-2.07.397-3.346.012-2.054 0-4.109 0-6.179l.004-.056z"/></svg>
+      </div>
+      <span class="arsenal-name">JavaScript</span>
+    </div>
+    <div class="arsenal-item" data-aos="zoom-in" data-aos-delay="200" style="--item-clr:#3776ab">
+      <div class="arsenal-icon">
+        <svg viewBox="0 0 24 24" width="36" height="36"><path fill="#3776ab" d="M14.25.18l.9.2.73.26.59.3.45.32.34.34.25.34.16.33.1.3.04.26.02.2-.01.13V8.5l-.05.13-.08.1-.1.07-.12.04-.14.02H7.64l-.09.04-.07.08-.04.11v2.94l.04.11.07.08.1.04h5.46l.11.05.1.09.05.12v2.95l-.05.11-.09.1-.1.04H2.38l-.11.03-.11.08-.05.12V18l.05.12.11.08.12.04H14.2l.28-.01.45-.05.5-.1.47-.2.4-.3.3-.4.2-.5.06-.56V4.11l-.04-.44-.1-.4-.2-.35-.3-.3-.4-.23-.5-.14-.56-.05H14.25zm-9.5 14.2l-.09.04-.07.08-.04.12-.01.13v2.1l.01.14.04.12.07.08.09.04H5.5l.1-.03.07-.08.04-.12v-2.1l-.03-.14-.06-.1-.1-.07H4.75z"/></svg>
+      </div>
+      <span class="arsenal-name">Python</span>
+    </div>
+    <div class="arsenal-item" data-aos="zoom-in" data-aos-delay="250" style="--item-clr:#00d4aa">
+      <div class="arsenal-icon">
+        <svg viewBox="0 0 24 24" width="36" height="36" fill="none" stroke="#00d4aa" stroke-width="1.5"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+      </div>
+      <span class="arsenal-name">Flask</span>
+    </div>
+    <div class="arsenal-item" data-aos="zoom-in" data-aos-delay="300" style="--item-clr:#00758f">
+      <div class="arsenal-icon">
+        <svg viewBox="0 0 24 24" width="36" height="36" fill="none" stroke="#00758f" stroke-width="1.5"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M3 5V19A9 3 0 0021 19V5"/><path d="M3 12A9 3 0 0021 12"/></svg>
+      </div>
+      <span class="arsenal-name">MySQL</span>
+    </div>
+    <div class="arsenal-item" data-aos="zoom-in" data-aos-delay="350" style="--item-clr:#f05032">
+      <div class="arsenal-icon">
+        <svg viewBox="0 0 24 24" width="36" height="36"><path fill="#f05032" d="M23.546 10.93L13.067.452a1.55 1.55 0 00-2.188 0L8.708 2.627l2.76 2.76a1.838 1.838 0 012.327 2.341l2.658 2.66a1.838 1.838 0 11-1.103 1.102L12.818 9v6.537a1.838 1.838 0 11-1.512-.077V8.949a1.838 1.838 0 01-.999-2.417L7.576 3.88 .454 10.93a1.55 1.55 0 000 2.187l10.48 10.479a1.55 1.55 0 002.186 0l10.42-10.42a1.55 1.55 0 000-2.187"/></svg>
+      </div>
+      <span class="arsenal-name">Git</span>
+    </div>
+    <div class="arsenal-item" data-aos="zoom-in" data-aos-delay="400" style="--item-clr:#7c3aed">
+      <div class="arsenal-icon">
+        <svg viewBox="0 0 24 24" width="36" height="36" fill="none" stroke="#7c3aed" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18"/><path d="M9 21V9"/></svg>
+      </div>
+      <span class="arsenal-name">REST API</span>
+    </div>
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <div class="section-header" data-aos="fade-up">
+    <span class="section-number">05</span>
+    <h2 class="section-title">Summon Me</h2>
+    <div class="section-line"></div>
+  </div>
+
+  <div class="contact-grid">
+    <div class="contact-info" data-aos="fade-right">
+      <h3 class="contact-headline">Ready to Build<br/><span>Something Great?</span></h3>
+      <p class="contact-desc">Whether it's a new project, a collaboration, or just a technical discussion — I'm always ready for the next mission.</p>
+
+      <div class="contact-channels">
+        <a href="mailto:shubham@example.com" class="channel-item">
+          <div class="channel-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          </div>
+          <div>
+            <span class="channel-label">Email</span>
+            <span class="channel-value">shubham@example.com</span>
+          </div>
+        </a>
+        <a href="https://github.com" target="_blank" class="channel-item">
+          <div class="channel-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
+          </div>
+          <div>
+            <span class="channel-label">GitHub</span>
+            <span class="channel-value">github.com/shubham</span>
+          </div>
+        </a>
+        <a href="https://linkedin.com" target="_blank" class="channel-item">
+          <div class="channel-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="#0077b5"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+          </div>
+          <div>
+            <span class="channel-label">LinkedIn</span>
+            <span class="channel-value">linkedin.com/in/shubham</span>
+          </div>
+        </a>
+      </div>
+    </div>
+
+    <!-- Contact Form -->
+    <div class="contact-form-wrap" data-aos="fade-left">
+      <div class="form-hud-header">
+        <span>TRANSMIT.MESSAGE</span>
+        <span class="form-status">● READY</span>
+      </div>
+      <form class="contact-form" id="contactForm">
+        <div class="form-group">
+          <label class="form-label">IDENTIFIER</label>
+          <input type="text" class="form-input" placeholder="Your Name" required/>
+          <div class="input-glow"></div>
+        </div>
+        <div class="form-group">
+          <label class="form-label">FREQUENCY</label>
+          <input type="email" class="form-input" placeholder="Your Email" required/>
+          <div class="input-glow"></div>
+        </div>
+        <div class="form-group">
+          <label class="form-label">TRANSMISSION</label>
+          <textarea class="form-input form-textarea" placeholder="Your Message" rows="5" required></textarea>
+          <div class="input-glow"></div>
+        </div>
+        <button type="submit" class="btn-submit">
+          <span class="btn-glow"></span>
+          <span class="btn-content">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+            Send Transmission
+          </span>
+        </button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<div class="jarvis-container" id="jarvisContainer">
+  <div class="jarvis-toggle" id="jarvisToggle" title="JARVIS Assistant">
+    <div class="jarvis-pulse"></div>
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg>
+  </div>
+
+  <div class="jarvis-panel" id="jarvisPanel">
+    <div class="jarvis-header">
+      <div class="jarvis-logo">
+        <span class="j-bracket">[</span>
+        <span class="j-text">J.A.R.V.I.S</span>
+        <span class="j-bracket">]</span>
+      </div>
+      <button class="jarvis-close" id="jarvisClose">✕</button>
+    </div>
+    <div class="jarvis-messages" id="jarvisMessages">
+      <div class="j-msg bot">
+        <div class="j-avatar">AI</div>
+        <div class="j-bubble">Hello. I'm J.A.R.V.I.S — Shubham's AI assistant. How can I help you today?</div>
+      </div>
+    </div>
+    <div class="jarvis-suggestions">
+      <button class="j-suggest" onclick="sendJarvis('Show me projects')">📁 Projects</button>
+      <button class="j-suggest" onclick="sendJarvis('What are the skills?')">⚡ Skills</button>
+      <button class="j-suggest" onclick="sendJarvis('How to contact?')">📡 Contact</button>
+    </div>
+    <div class="jarvis-input-wrap">
+      <input type="text" id="jarvisInput" placeholder="Ask J.A.R.V.I.S..." />
+      <button id="jarvisSend">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+      </button>
+    </div>
+  </div>
+</div>
+
+<footer class="footer">
+  <div class="footer-grid">
+    <div class="footer-logo">
+      <span class="logo-bracket">[</span>
+      <span class="logo-text">SHB</span>
+      <span class="logo-bracket">]</span>
+    </div>
+    <p class="footer-copy">© 2026 Shubham. Engineered with passion.</p>
+    <div class="footer-links">
+      <a href="https://github.com" target="_blank">GitHub</a>
+      <a href="https://linkedin.com" target="_blank">LinkedIn</a>
+    </div>
+  </div>
+  <div class="footer-bar"></div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
